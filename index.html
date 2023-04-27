@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/2e5d5a7d26.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="hero" id="header">
+        <nav>
+            <img src="Screenshot 2023-04-24 221149.png" class="logo">
+            <ul>
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#ABOUT">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+               
+        
+            </ul>
+        </nav>
+        <div class="detel">
+            <h1>Hello,</h1>
+            <h1>I'm Yetukuri <span>Revanth</span></h1>
+            <h2>Roll No: EE22B038</h2>
+            <h2>IITM</h2>
+        </div>
+        <div class="images">
+            <img src="orange.jpg" class ="shape">
+           
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="ABOUT">
+     <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="1bf.png" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About <span>Me</span></h1>
+                <p>I'm Yetukuri Revanth, Roll No: EE22B038. I am from Hyderabad, Telangana.
+                     I am currently in my 1st year pursuing
+                     bachelor's of technology degree in the department of electrical engineering
+                     at Indian Institute of Technology Madras. My hobbies are playing cricket and 
+                     reading novels.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('strengths')">Strengths</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>HTML</span><br>Proficient in HTML</li>
+                        <li><span>CSS</span><br>Good knowledge in CSS</li>
+                        <li><span>Java Script </span><br>Basic knowledge in JS</li>
+                        <li><span>C </span><br>proficient in c</li>
+                        <li><span>Python</span><br>Basic knowledge in python</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="strengths">
+                    <ul>
+                        <li><span>Hardworking</span><br></li>
+                        <li><span>Dedication</span><br></li>
+                        <li><span>Smart thinking</span><br></li>
+                        <li><span>Team work</span><br></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+     </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"><br> Contact <span>Details</span></h1>
+                    <p><i class="fa-solid fa-envelope"></i>ee22b038@smail.iitm.ac.in</p>
+                    <p><i class="fa-solid fa-phone"></i>7893247308</p>
+                    <p><i class="fa-solid fa-house"></i>Mandhakini 709</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/r_e_v_a_n_t_h_17/" target="_blank" title="instagram"><i class="fa-brands fa-instagram "></i></a>
+                        <a href="https://www.facebook.com/revanth.yetukuri/" target="_blank" title="facebook"><i class="fa-brands fa-facebook "></i></a>
+                        <a href="https://www.linkedin.com/in/yetukuri-revanth-372663269/?originalSubdomain=in" target="_blank" title="linkedin"><i class="fa-brands fa-linkedin "></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <br>
+                    <br>
+                    <img src="Contact-Shepherds-Hope.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+   
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");;
+    }
+
+
+</script>
+
+
+</body>
+</html>
+
+
+
+
